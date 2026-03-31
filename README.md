@@ -1,163 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PR Admin Panel</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f6f9;
-            color: #333;
-        }
-        header {
-            background: #0d6efd;
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-        section {
-            padding: 20px 40px;
-        }
-        h1, h2 {
-            color: #0d6efd;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        ul {
-            line-height: 1.8;
-        }
-        code {
-            background: #eee;
-            padding: 4px 6px;
-            border-radius: 5px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #0d6efd;
-            color: white;
-        }
-        a {
-            color: #0d6efd;
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
+<h1 align="center">🚀 PR Admin Panel</h1>
 
-<header>
-    <h1>🚀 PR Admin Panel</h1>
-    <p>A Full Stack Admin Dashboard for Product & Category Management</p>
-</header>
+<p align="center">
+  <b>⚡ Advanced Full Stack Admin Dashboard</b><br>
+  Manage Products • Categories • Subcategories with Ease
+</p>
 
-<section>
-    <div class="card">
-        <h2>📌 Project Overview</h2>
-        <p>
-            PR Admin Panel is a full-stack web application designed to manage products,
-            categories, and subcategories efficiently. It provides an intuitive admin
-            interface with CRUD operations and image upload support.
-        </p>
-    </div>
+<p align="center">
+  <a href="https://github.com/Dev-Mjarir08/PR-Admin-Panel">
+    <img src="https://img.shields.io/badge/View%20Repository-181717?style=for-the-badge&logo=github">
+  </a>
+  
+  <!-- 🔥 CHANGE THIS LINK -->
+  <a href="https://your-live-demo-link.com">
+    <img src="https://img.shields.io/badge/🚀%20Live%20Demo-0ea5e9?style=for-the-badge">
+  </a>
+</p>
 
-    <div class="card">
-        <h2>✨ Features</h2>
-        <ul>
-            <li>✅ Product Management (Add, Edit, Delete)</li>
-            <li>✅ Category & Subcategory Management</li>
-            <li>✅ Image Upload Functionality</li>
-            <li>✅ REST API Integration</li>
-            <li>✅ EJS Template Rendering</li>
-            <li>✅ Responsive Admin Dashboard</li>
-        </ul>
-    </div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-Backend-green?style=flat-square&logo=node.js">
+  <img src="https://img.shields.io/badge/Express.js-Framework-black?style=flat-square&logo=express">
+  <img src="https://img.shields.io/badge/MongoDB-Database-green?style=flat-square&logo=mongodb">
+  <img src="https://img.shields.io/badge/EJS-Template-yellow?style=flat-square">
+</p>
 
-    <div class="card">
-        <h2>🛠️ Tech Stack</h2>
-        <ul>
-            <li><strong>Frontend:</strong> HTML, CSS, EJS</li>
-            <li><strong>Backend:</strong> Node.js, Express.js</li>
-            <li><strong>Database:</strong> MongoDB</li>
-            <li><strong>Others:</strong> Multer (File Upload), Fetch API</li>
-        </ul>
-    </div>
+<p align="center">
+  <img src="https://img.shields.io/github/stars/Dev-Mjarir08/PR-Admin-Panel?style=social">
+  <img src="https://img.shields.io/github/forks/Dev-Mjarir08/PR-Admin-Panel?style=social">
+</p>
 
-    <div class="card">
-        <h2>📂 Project Structure</h2>
-        <pre>
+---
+
+<h2>📌 Overview</h2>
+
+<p>
+PR Admin Panel is a <b>modern full-stack admin dashboard</b> built using Node.js and Express.
+It provides a powerful interface to manage <b>products, categories, and subcategories</b>
+with seamless API integration and image upload support.
+</p>
+
+---
+
+<h2>✨ Features</h2>
+
+<ul>
+  <li>🔥 Full CRUD System (Product, Category, Subcategory)</li>
+  <li>🖼️ Image Upload with Multer</li>
+  <li>🔗 REST API Integration (Fetch API)</li>
+  <li>⚡ Fast Rendering using EJS</li>
+  <li>📂 Clean MVC Architecture</li>
+  <li>🚀 Scalable Project Structure</li>
+</ul>
+
+---
+
+<h2>🛠️ Tech Stack</h2>
+
+<table>
+<tr><td><b>Frontend</b></td><td>HTML, CSS, EJS</td></tr>
+<tr><td><b>Backend</b></td><td>Node.js, Express.js</td></tr>
+<tr><td><b>Database</b></td><td>MongoDB</td></tr>
+<tr><td><b>File Upload</b></td><td>Multer</td></tr>
+</table>
+
+---
+
+<h2>📂 Project Structure</h2>
+
+<pre>
 PR-Admin-Panel/
-│── controllers/
-│── routes/
-│── models/
-│── views/
-│── public/
-│── uploads/
-│── app.js
-│── package.json
-        </pre>
-    </div>
+│
+├── controllers/
+├── routes/
+├── models/
+├── views/
+├── public/
+├── uploads/
+│
+├── app.js
+└── package.json
+</pre>
 
-    <div class="card">
-        <h2>⚙️ Installation & Setup</h2>
-        <ol>
-            <li>Clone the repository:
-                <br><code>git clone https://github.com/Dev-Mjarir08/PR-Admin-Panel.git</code>
-            </li>
-            <li>Navigate to the project folder:
-                <br><code>cd PR-Admin-Panel</code>
-            </li>
-            <li>Install dependencies:
-                <br><code>npm install</code>
-            </li>
-            <li>Start the server:
-                <br><code>npm start</code>
-            </li>
-        </ol>
-    </div>
+---
 
-    <div class="card">
-        <h2>🌐 API Endpoints</h2>
-        <ul>
-            <li><code>GET /api/product</code> - Get all products</li>
-            <li><code>POST /api/product</code> - Create product</li>
-            <li><code>PATCH /api/product/:id</code> - Update product</li>
-            <li><code>DELETE /api/product/:id</code> - Delete product</li>
-        </ul>
-    </div>
+<h2>⚙️ Installation</h2>
 
-    <div class="card">
-        <h2>📸 Screenshots</h2>
-        <p>Add your project screenshots here for better presentation.</p>
-    </div>
+<pre>
+git clone https://github.com/Dev-Mjarir08/PR-Admin-Panel.git
+cd PR-Admin-Panel
+npm install
+npm start
+</pre>
 
-    <div class="card">
-        <h2>👨‍💻 Author</h2>
-        <p>
-            <strong>Jarir Multani</strong><br>
-            GitHub: 
-            <a href="https://github.com/Dev-Mjarir08" target="_blank">
-                github.com/Dev-Mjarir08
-            </a>
-        </p>
-    </div>
+---
 
-    <div class="card">
-        <h2>📄 License</h2>
-        <p>This project is licensed under the MIT License.</p>
-    </div>
-</section>
+<h2>🌐 API Endpoints</h2>
 
-<footer>
-    <p>© 2026 PR Admin Panel | Developed with ❤️ by Jarir Multani</p>
-</footer>
+<table>
+<tr><th>Method</th><th>Endpoint</th><th>Description</th></tr>
+<tr><td>GET</td><td>/api/product</td><td>Get all products</td></tr>
+<tr><td>POST</td><td>/api/product</td><td>Create product</td></tr>
+<tr><td>PATCH</td><td>/api/product/:id</td><td>Update product</td></tr>
+<tr><td>DELETE</td><td>/api/product/:id</td><td>Delete product</td></tr>
+</table>
 
-</body>
-</html>
+---
+
+<h2>📸 Preview</h2>
+
+<p align="center">
+  <img src="https://via.placeholder.com/900x420?text=Admin+Panel+Preview" width="85%">
+</p>
+
+---
+
+<h2>🚀 Future Enhancements</h2>
+
+<ul>
+  <li>🔐 Authentication System (Login/Register)</li>
+  <li>📊 Dashboard Analytics</li>
+  <li>🌙 Dark Mode UI</li>
+  <li>📁 Drag & Drop Upload</li>
+</ul>
+
+---
+
+<h2>👨‍💻 Author</h2>
+
+<p>
+<b>Jarir Multani</b><br>
+<a href="https://github.com/Dev-Mjarir08">🔗 GitHub Profile</a>
+</p>
+
+---
+
+<h2>📄 License</h2>
+
+<p>MIT License</p>
+
+---
+
+<p align="center">
+  💎 <b>Crafted with Passion by Jarir Multani</b> 💎
+</p>
