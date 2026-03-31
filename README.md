@@ -11,8 +11,8 @@
   </a>
   
   <!-- 🔥 CHANGE THIS LINK -->
-  <a href="https://your-live-demo-link.com">
-    <img src="[https://img.shields.io/badge/🚀%20Live%20Demo-0ea5e9?style=for-the-badge](https://pr-admin-panel.onrender.com/)">
+  <a href="https://pr-admin-panel.onrender.com/">
+    <img src="https://img.shields.io/badge/🚀%20Live%20Demo-0ea5e9?style=for-the-badge">
   </a>
 </p>
 
