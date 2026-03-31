@@ -1,7 +1,7 @@
 import { Router } from "express";
 
 
-import { extracreateCategory, extradeleteCategory, extragetAllCategory, extraupdateCategory,extragetSingleCategory } from "../../controller/API controller/extracategory.controller.js";
+import { extracreateCategory, extradeleteCategory, extragetAllCategory, extraupdateCategory,extragetSingleCategory } from "../../controller/APIcontroller/extracategory.controller.js";
 
 
 const extracatRouter = Router();

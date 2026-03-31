@@ -1,5 +1,5 @@
 import {Router} from "express";
-import { createUser, deleteUser, getAllUser, getUser } from "../../controller/API controller/user.controller.js";
+import { createUser, deleteUser, getAllUser, getUser } from "../../controller/APIcontroller/user.controller.js";
 
 const userRouter = Router();
 

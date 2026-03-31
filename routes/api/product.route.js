@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { creatProduct, deleteProduct, getAllProduct, updateProduct ,getSingleProduct } from "../../controller/API controller/product.controller.js";
+import { creatProduct, deleteProduct, getAllProduct, updateProduct ,getSingleProduct } from "../../controller/APIcontroller/product.controller.js";
 
 import imageUploads from "../../middleware/imageUpload.js";
 
