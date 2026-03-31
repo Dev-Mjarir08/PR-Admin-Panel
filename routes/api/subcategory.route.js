@@ -1,7 +1,7 @@
 import { Router } from "express";
 
 
-import { subcreateCategory, subdeleteCategory, subgetAllCategory, subupdateCategory,subgetSingleCategory } from "../../controller/APIcontroller/subcategory.controller.js";
+import { subcreateCategory, subdeleteCategory, subgetAllCategory, subupdateCategory,subgetSingleCategory } from "../../controller/APIcontroller/subCategory.controller.js";
 
 
 const catRouter = Router();
