@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Product</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+        }
+
+        .form-wrapper {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-card {
+            background: #0b1220;
+            padding: 40px;
+            width: 450px;
+            border-radius: 12px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.4);
+            color: #fff;
+        }
+
+        .form-card h2 {
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #9ca3af;
+            margin-bottom: 25px;
+        }
+
+        .input-group {
+            margin-bottom: 18px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #cbd5e1;
+        }
+
+        .input-group input,
+        .input-group textarea,
+        .input-group select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            background: #111827;
+            color: #fff;
+            outline: none;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input[type="file"] {
+            padding: 8px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(90deg, #4f46e5, #3b82f6);
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-wrapper">
+    <div class="form-card">
+
+        <h2>Create Product</h2>
+        <p class="subtitle">Add new product details</p>
+
+        <form method="POST" enctype="multipart/form-data" action="/product/add-product">
+
+            <!-- NAME -->
+            <div class="input-group">
+                <label>Product Name</label>
+                <input type="text" name="name" placeholder="Enter product name">
+            </div>
+
+            <!-- DESCRIPTION -->
+            <div class="input-group">
+                <label>Description</label>
+                <textarea name="description" rows="3" placeholder="Enter description"></textarea>
+            </div>
+
+            <!-- PRICE -->
+            <div class="input-group">
+                <label>Price</label>
+                <input type="number" name="price" placeholder="Enter price">
+            </div>
+
+            <!-- IMAGE -->
+            <div class="input-group">
+                <label>Product Image</label>
+                <input type="file" name="image">
+            </div>
+
+            <!-- CATEGORY -->
+            <div class="input-group">
+                <label>Category</label>
+                <select name="category">
+                    <option value="">Select Category</option>
+                    <% categories.forEach(cat => { %>
+                        <option value="<%= cat._id %>"><%= cat.name %></option>
+                    <% }) %>
+                </select>
+            </div>
+
+            <!-- SUB CATEGORY -->
+            <div class="input-group">
+                <label>Sub Category</label>
+                <select name="subcategory">
+                    <option value="">Select SubCategory</option>
+                    <% subcategories.forEach(sub => { %>
+                        <option value="<%= sub._id %>"><%= sub.name %></option>
+                    <% }) %>
+                </select>
+            </div>
+
+            <!-- EXTRA CATEGORY -->
+            <div class="input-group">
+                <label>Extra Category</label>
+                <select name="extracategory">
+                    <option value="">Select ExtraCategory</option>
+                    <% extraCategories.forEach(extra => { %>
+                        <option value="<%= extra._id %>"><%= extra.name %></option>
+                    <% }) %>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-submit">Create Product</button>
+
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>
